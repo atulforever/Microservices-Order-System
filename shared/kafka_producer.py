@@ -8,5 +8,7 @@ producer = KafkaProducer(
 )
 
 def publish(topic, event):
+    if not hasattr(event, "to_dict"):
+        raise TypeError(f"Event {event.__class__.__name__} must implement to_dict()")
     producer.send(topic, event.to_dict())
     producer.flush()

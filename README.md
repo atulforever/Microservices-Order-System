@@ -108,6 +108,7 @@ You can run only Kafka-based tests using:
 ```bash
 pytest -m kafka
 ```
+![Tests](./images/test.png)
 
 ---
 

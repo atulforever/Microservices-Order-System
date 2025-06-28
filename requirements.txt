@@ -3,3 +3,8 @@ uvicorn
 mysql-connector-python
 kafka-python
 pydantic
+logging
+pytest
+pytest-mock
+httpx
+asyncio
